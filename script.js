@@ -21,7 +21,7 @@ passwordText.addEventListener("keyup", function(event) {
 
 function ButtonClick(){
     let text = passwordText.value 
-    if(text === password){
+    if(text === password && firstName.value === "wylcharles" && lastName.value === "pierre"){
      
         Swal.fire({
             icon: 'success',
