@@ -1,5 +1,5 @@
 var passwordText = document.querySelector('.passwordText');
-var password = 'reptiles'
+var password = '123'
 var submitButton = document.querySelector('.submitButton')
 var firstName = document.querySelector('.firstName');
 var lastName = document.querySelector('.lastName');
@@ -27,8 +27,9 @@ function ButtonClick(){
     if(pwordText === password && firstNameText === "wylcharles" && lastNameText === "pierre"){
      
         Swal.fire({
+            position:'top',
             icon: 'success',
-            iconColor:'red',
+            iconColor:'green',
             title: 'Get ready to PARTY ' + firstNameText + '!',
             titleColor:'red',
             showConfirmButton:false,
@@ -39,11 +40,20 @@ function ButtonClick(){
       else{
         Swal.fire({
             icon: 'error',
-            title: 'Hi ' + lastName.value + ' ' + lastName.value +  ' Something was not right try again!',
+            title: 'Hi ' + firstName.value + ' ' + lastName.value +  ' Something was not right try again!',
             showConfirmButton:false,
-            background:'rgba(255, 255, 255,0.65)'
+            background:'rgba(255, 255, 255,0.8)'
           })
   
       }
     
+}
+
+GetData();
+function GetData(){ 
+  // const response = await fetch(database.connection.query("select * from users",(err,answer) => {
+  //   if(err) throw err;
+  //   console.log(answer);
+  // }));
+  console.log("all");
 }

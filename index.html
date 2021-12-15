@@ -7,7 +7,7 @@
     <title>Private</title>
     <script src="https://unpkg.com/css-doodle@0.22.0/css-doodle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="insert.js"></script>
+    <script type="module" src="database.js"></script>
     <style>html, body { 
         height: 100%; 
         margin: 0 
@@ -109,9 +109,9 @@
         <h1 style="color: red; ">Welcome !</h1>
         <input class="firstName" type="text" name="firstName" placeholder="First Name">
         <input class="lastName" type="text" name="lastName" placeholder="Last Name">
-        <input class="passwordText" type="text" name="passwordText" placeholder="Password">
-        <button formaction="index.php" formenctype="submit" formmethod="get" class='submitButton' onclick="PasswordSubmit()">Submit</button>
-    </div>
+        <input class="passwordText" type="password" name="passwordText" placeholder="Password">
+        <button  formenctype="submit" formmethod="get" class='submitButton' onclick="PasswordSubmit()">Submit</button>
+    </div>    
     <script src="/script.js"></script>
 </body>
 </html>
